@@ -1,0 +1,20 @@
+exam {
+    student_id: "github_id"
+    questions: {
+        gramatica: manual { file: "gramaticas.md" }
+    }
+    competencies: {
+        arvores: 
+            { ast: 5, bnf: 1 }
+        bnf: 
+            { bnf: 4 }
+        gerador: 
+            { cfg: 3, bnf: 1, eval: 3 }
+        gramaticas: 
+            { cfg: 2, bnf: 3 }
+        listas: 
+            { cfg: 2, bnf: 2 }
+        precedencia: 
+            { cfg: 3, bnf: 2 }
+    }
+}

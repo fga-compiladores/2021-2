@@ -1,0 +1,17 @@
+x = 1
+y = 2
+z = 3
+
+infixa  = (x + y) * z = 9
+prefixa = * + x y z   = * 3 z = 9
+sufixa  = x y + z *   = 3 z * = 9
+
+lisp = (* (+ x y) z)
+
+
+(define fat (n) 
+    (if (= n 0) 
+        1 
+        (* n (fat (- n 1)))))
+
+

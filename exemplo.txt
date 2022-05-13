@@ -1,0 +1,82 @@
+ALFABETO: 
+    conjunto de símbolos que formam as strings de uma linguagem
+    (ex.: a,b,c,d,e,...,z)
+
+
+LÉXICO: 
+    conjunto das palavras (lexemas) válidas em uma linguagem. unidade 
+    (substring) que possui algum significado próprio
+
+    def fat(n): return 10 if n == 0 else n * fat(n - 1)
+    ^^^ ^^^=^=^ ^^^^^^ ^^ ^^ ^ ^^ ^ ^^^^ ^ ^ ^^^=^ ^ ^=
+
+    def fat ( n ) : return 10 if n == 0 else n * fat ( n - 1 )
+
+    def fat ) n ( : return 10 if n == 0 else n * fat ( n - 1 )
+    
+
+TOKENS:
+    Lexema com uma categoria específica
+
+    Eu       - substantivo
+    programo - verbo  
+    Python   - substantivo
+
+
+    def     - KW_DEF
+    fat     - NOME
+    )       - RPAR
+    n       - NOME 
+    (       - LPAR
+    :       - COLON
+    return  - KW_RET
+    10      - INT
+    if      - KW_IF
+    n       - NOME   
+    ==      - OP
+    ...
+
+
+REGRAS DE PRODUÇÃO:
+    Conjunto de regras de transformação que descrevem como é possível organizar
+    os lexemas da linguagem
+
+    L1 e L2 são duas linguagens.
+    C1 e C2 são os conjuntos das frases válidas de cada linguagem.
+
+    Seja, 
+        C1 = {a, b, c}
+        C2 = {d, e, f}
+            
+    União/alternativa:
+        C3 = C1 + C2 = {a, b, c, d, e, f}
+        L3 = L1 | L2  # L3 aceita frases de L1 OU de L2
+
+    Concatenação/produto:
+        C4 = {ad, ae, af, bd, be, bf, cd, ce, cf} 
+        L4 = L1 L2
+
+    Estrela de Klein (zero ou mais repetições de uma linguagem)
+        A* = ε | A | AA | AAA | AAAA | ...
+        A  = { a }
+        A* = { ε, a, aa, aaa, aaaa, ... }
+        A+ = { a, aa, aaa, aaaa, ... } = A* A = A A*
+
+        ε = representa a string vazia
+
+    Opcional
+        A? = A | ε
+        
+    B = {true, false}
+    LB = {[}
+    RB = {]}
+    CO = {,}
+
+    LBN   : [ ELS2 ] 
+    ELS2  : ELEMS | ε
+    ELEMS : B E2*
+    E2    : , B
+
+
+    [ ] 
+    [ false , true , false, true ] 

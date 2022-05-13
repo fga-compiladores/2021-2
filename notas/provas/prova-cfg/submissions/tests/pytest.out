@@ -1,0 +1,15 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.4, pytest-7.1.2, pluggy-1.0.0
+rootdir: /home/chips/aulas/compiladores/arquivadas/2021-2/notas/provas/prova-cfg/submissions/tests
+plugins: anyio-3.5.0
+collected 82 items / 6 errors
+
+=========================== short test summary info ============================
+ERROR tests/test_arvores.py
+ERROR tests/test_bnf.py
+ERROR tests/test_gerador.py
+ERROR tests/test_gramaticas.py
+ERROR tests/test_listas.py
+ERROR tests/test_precedencia.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 6 errors during collection !!!!!!!!!!!!!!!!!!!!
+============================== 6 errors in 0.07s ===============================

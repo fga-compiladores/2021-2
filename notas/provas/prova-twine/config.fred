@@ -1,0 +1,30 @@
+exam {
+    student_id: "github_id"
+    competencies: {
+        ; ast: 5 + 7
+        ; bnf: 13 + 4 
+        ; cfg: 10 + 10
+        ; eval: 3 + 13
+        ; regex: 0 + 15
+        compilador-org:
+            { regex: 2, lex: 2, cfg: 2, ast: 2, bnf: 2, eval: 2 }
+        cfg-ast:
+            { ast: 4, cfg: 1 }
+        cfg-lark:
+            { cfg: 3, bnf: 2, ast: 1  }
+        eval:
+            { eval: 5 }
+        eval-fn:
+            { eval: 5 }
+        ir:
+            { ast: 5, eval: 1 }
+        lex-lark:
+            { lex: 5, regex: 3 }
+        lex-re:
+            { lex: 5, regex: 5 }
+        re-basico:
+            { regex: 5 }
+        recur:
+            { cfg: 5 }
+    }
+}
